@@ -1,0 +1,96 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "gui_light": "front",
+  "textures": {
+    "side": "tezlamod:block/woodcutter_side",
+    "top": "tezlamod:block/woodcutter_top",
+    "bottom": "tezlamod:block/woodcutter_bottom",
+    "saw": "tezlamod:block/woodcutter_saw",
+    "particle": "tezlamod:block/woodcutter_bottom"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [0, 0, 0],
+      "to": [16, 9, 16],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 8]},
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#side" },
+        "south": { "uv": [0, 0, 16, 16], "texture": "#side" },
+        "east":  { "uv": [0, 0, 16, 16], "texture": "#side" },
+        "west":  { "uv": [0, 0, 16, 16], "texture": "#side" },
+        "up":    { "uv": [0, 0, 16, 16], "texture": "#top" },
+        "down":  { "uv": [0, 0, 16, 16], "texture": "#bottom" }
+      }
+    },
+    {
+      "name": "saw",
+      "from": [1, 9, 8],
+      "to":   [15, 16, 8],
+      "shade": false,
+      "rotation": {"angle": 0, "axis": "y", "origin": [1, 9, 8]},
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#saw", "tintindex": 0 },
+        "south": { "uv": [0, 0, 16, 16], "texture": "#saw", "tintindex": 0 }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [67, 45, 0],
+      "translation": [0, 1.5, 0],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [67, 45, 0],
+      "translation": [0, 1.5, 0],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 45, 0],
+      "translation": [-1.25, 0, 0.75],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, -135, 0],
+      "translation": [-1.25, 0, 0.75],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "ground": {
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "gui": {
+      "rotation": [28, -135, 0],
+      "translation": [0, 0.5, 1],
+      "scale": [0.65, 0.65, 0.65]
+    },
+    "head": {
+      "translation": [0, 13, 0]
+    },
+    "fixed": {
+      "rotation": [1, 0, 0],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "on_shelf": {
+      "rotation": [0, -180, 0]
+    }
+  },
+  "groups": [
+    {
+      "name": "woodcutter",
+      "origin": [14, 0, 0],
+      "color": 0,
+      "children": [
+        0,
+        {
+          "name": "saw",
+          "origin": [8, 8, 8],
+          "color": 0,
+          "children": [1]
+        }
+      ]
+    }
+  ]
+}
