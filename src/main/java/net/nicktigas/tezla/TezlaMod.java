@@ -1,11 +1,9 @@
 package net.nicktigas.tezla;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.nicktigas.tezla.block.ModBlocks;
 import net.nicktigas.tezla.item.ModItems;
-import net.nicktigas.tezla.item.crafting.ModRecipe;
-import net.nicktigas.tezla.item.crafting.ModRecipeType;
+
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
