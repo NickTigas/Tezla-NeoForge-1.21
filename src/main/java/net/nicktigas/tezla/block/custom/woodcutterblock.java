@@ -18,9 +18,8 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.nicktigas.tezla.stats.ModStats;
 import org.jetbrains.annotations.Nullable;
-
-
 
 public class woodcutterblock extends HorizontalDirectionalBlock {
 
@@ -59,6 +58,16 @@ public class woodcutterblock extends HorizontalDirectionalBlock {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
+    }
+
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+        if (level.isClientSide) {
+            return InteractionResult.SUCCESS;
+        } else {
+            player.openMenu(state.getMenuProvider(level, pos));
+            player.awardStat(ModStats.INTERACT_WITH_WOODCUTTER);
+            return InteractionResult.CONSUME;
+        }
     }
 
 
