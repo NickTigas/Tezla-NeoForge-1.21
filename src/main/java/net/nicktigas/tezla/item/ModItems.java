@@ -13,7 +13,7 @@ import net.nicktigas.tezla.TezlaMod;
 public class ModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TezlaMod.MOD_ID);
-
-
+    public static final DeferredItem<Item> INFECTED_APPLE = ITEMS.register("infected_apple",
+            ()  -> new Item(new Item.Properties().food(ModFoodProperties.INFECTED_APPLE)));
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

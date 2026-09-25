@@ -70,6 +70,10 @@ public class TezlaMod {
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
             event.accept(ModBlocks.WOODCUTTER);
         }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.INFECTED_APPLE);
+        }
+
 
     }
 
