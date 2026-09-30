@@ -73,6 +73,9 @@ public class TezlaMod {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.INFECTED_APPLE);
         }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
+            event.acecept(ModBlocs.COPPERBUTTON)
+        }
 
 
     }

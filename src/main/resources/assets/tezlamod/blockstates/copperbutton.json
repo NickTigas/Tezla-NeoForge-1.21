@@ -1,0 +1,8 @@
+{
+  "varants": {
+    "model": "tezlamod:block/copperbutton"
+  },
+  "powered=true": {
+    "model": "tezlamod:block/copperbutton_down"
+  }
+}

@@ -1,4 +1,5 @@
 {
   "block.tezlamod.woodcutter": "Woodcutter",
-  "item.nomiconmodnf.infected_apple": "Infected Apple"
+  "item.tezlamod.infected_apple": "Infected Apple",
+  "block.tezlamod.copperbutton": "Copper Button"
 }

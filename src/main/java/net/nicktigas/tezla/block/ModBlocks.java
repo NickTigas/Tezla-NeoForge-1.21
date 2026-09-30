@@ -28,6 +28,10 @@ public class ModBlocks {
                     .mapColor(MapColor.WOOD).requiresCorrectToolForDrops()
                     .strength(3.5F).sound(SoundType.WOOD)));
 
+    public static final DeferredBlock<Block> COPPERBUTTON = registerBlock("copperbutton",
+            properties -> new copperbuton(BlocksSetTypes.COPPER, properties.strength(1.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
